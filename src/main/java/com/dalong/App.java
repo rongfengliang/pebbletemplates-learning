@@ -20,7 +20,7 @@ public class App {
                         .credentials("minio", "minio123")
                         .build();
         DelegatingLoader delegatingLoader = new DelegatingLoader(Arrays.asList(new S3Loader(minioClient,"demoapp")));
-        PebbleEngine engine = new PebbleEngine.Builder().loader(delegatingLoader).build();
+        PebbleEngine engine = new PebbleEngine.Builder().loader(delegatingLoader).extension(new MyExtension()).build();
         PebbleTemplate compiledTemplate = engine.getTemplate("home.html");
         Map<String, Object> context = new HashMap<>();
         context.put("name", "Mitchell");
