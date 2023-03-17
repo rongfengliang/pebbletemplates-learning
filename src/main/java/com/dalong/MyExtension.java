@@ -26,6 +26,16 @@ public class MyExtension extends AbstractExtension {
         return parsers;
     }
 
+
+    @Override
+    public Map<String, Object> getGlobalVariables() {
+        AppUtil appUtil = new AppUtil();
+        Map<String, Object> objectMap = new HashMap<>();
+        objectMap.put("__name__","dalongdemo");
+        objectMap.put("__util__",appUtil);
+        return objectMap;
+    }
+
     @Override
     public Map<String, Function> getFunctions() {
         Map<String, Function> functionMap = new HashMap<>();

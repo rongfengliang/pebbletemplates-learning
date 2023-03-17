@@ -4,7 +4,6 @@ import io.pebbletemplates.pebble.error.PebbleException;
 import io.pebbletemplates.pebble.extension.NodeVisitor;
 import io.pebbletemplates.pebble.node.AbstractRenderableNode;
 import io.pebbletemplates.pebble.node.expression.Expression;
-import io.pebbletemplates.pebble.node.expression.MapExpression;
 import io.pebbletemplates.pebble.template.EvaluationContextImpl;
 import io.pebbletemplates.pebble.template.PebbleTemplateImpl;
 

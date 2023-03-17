@@ -2,6 +2,7 @@ package com.dalong;
 
 import io.minio.MinioClient;
 import io.pebbletemplates.pebble.PebbleEngine;
+import io.pebbletemplates.pebble.attributes.methodaccess.BlacklistMethodAccessValidator;
 import io.pebbletemplates.pebble.loader.DelegatingLoader;
 import io.pebbletemplates.pebble.template.PebbleTemplate;
 
